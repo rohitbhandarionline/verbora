@@ -31,6 +31,7 @@ def index():
             'tone': request.form['tone'],
             'keywords': [k.strip() for k in request.form['keywords'].split(',')]
         }
+
         profile = generate_brand_profile(info)
         names = suggest_brand_names(info['keywords'])
         return render_template('result.html', profile=profile, names=names)

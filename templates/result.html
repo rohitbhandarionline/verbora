@@ -10,7 +10,7 @@
     <p><strong>Industry:</strong> {{ profile.industry }}</p>
     <p><strong>Target Audience:</strong> {{ profile.target_audience }}</p>
     <p><strong>Tone:</strong> {{ profile.tone }}</p>
-    <p><strong>Values:</strong> {{ profile.values|join(', ') }}</p>
+    <p><strong>Values:</strong> {{ profile['values']|join(', ') }}</p>
     <p><strong>Brand Story:</strong> {{ profile.brand_story }}</p>
     <p><strong>Positioning:</strong> {{ profile.positioning }}</p>
 

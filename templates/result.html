@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brand Profile Results</title>
+</head>
+
+<body>
+    <h2>✅ Your Brand Profile</h2>
+    <p><strong>Industry:</strong> {{ profile.industry }}</p>
+    <p><strong>Target Audience:</strong> {{ profile.target_audience }}</p>
+    <p><strong>Tone:</strong> {{ profile.tone }}</p>
+    <p><strong>Values:</strong> {{ profile.values|join(', ') }}</p>
+    <p><strong>Brand Story:</strong> {{ profile.brand_story }}</p>
+    <p><strong>Positioning:</strong> {{ profile.positioning }}</p>
+
+    <h3>💡 Name Suggestions</h3>
+    <ul>
+        {% for name in names %}
+        <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+
+    <br><a href="/">🔁 Start Over</a>
+</body>
+
+</html>

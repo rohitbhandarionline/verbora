@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: brand-name-generator
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"

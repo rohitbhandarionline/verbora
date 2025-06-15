@@ -1,30 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Brand Profile Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Create a powerful brand identity using our Brand Profile Generator. Define your industry, audience, values, and more.">
+    <meta name="keywords" content="Brand Builder, Branding, Brand Strategy, Brand Profile Generator">
+    <meta name="author" content="Verbora">
+    <title>Verbora – Brand Profile Generator</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Basic Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #4b2aad;
+            padding: 1rem 2rem;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        nav {
+            margin-top: 0.5rem;
+        }
+
+        nav a {
+            margin-right: 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #4b2aad;
+        }
+
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        label {
+            font-weight: 600;
+            margin-top: 1rem;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.3rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #4b2aad;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #eee;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .social-links a {
+            margin: 0 0.5rem;
+            text-decoration: none;
+            color: #4b2aad;
+        }
+
+        @media (max-width: 600px) {
+
+            header,
+            main,
+            footer {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h2>Create Your Brand</h2>
-    <form method="POST">
-        <label>Industry:</label><br>
-        <input type="text" name="industry" required><br><br>
+    <header>
+        <h1>Verbora</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-        <label>Target Audience:</label><br>
-        <input type="text" name="audience" required><br><br>
+    <main>
+        <h2>Create Your Brand</h2>
+        <p>Use this tool to define the core of your brand identity and get a customized brand profile.</p>
+        <form method="POST">
+            <label for="industry">Industry:</label>
+            <input type="text" id="industry" name="industry" required>
 
-        <label>Values (comma separated):</label><br>
-        <input type="text" name="values" required><br><br>
+            <label for="audience">Target Audience:</label>
+            <input type="text" id="audience" name="audience" required>
 
-        <label>Tone of Voice (e.g. playful, professional):</label><br>
-        <input type="text" name="tone" required><br><br>
+            <label for="values">Values (comma separated):</label>
+            <input type="text" id="values" name="values" required>
 
-        <label>Keywords (comma separated):</label><br>
-        <input type="text" name="keywords" required><br><br>
+            <label for="tone">Tone of Voice (e.g. playful, professional):</label>
+            <input type="text" id="tone" name="tone" required>
 
-        <button type="submit">Generate Brand</button>
-    </form>
+            <label for="keywords">Keywords (comma separated):</label>
+            <input type="text" id="keywords" name="keywords" required>
+
+            <button type="submit">Generate Brand</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Verbora. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
 </body>
 
 </html>

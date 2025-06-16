@@ -3,7 +3,7 @@ import csv
 import json
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'  # Required for flashing messages
+app.secret_key = 'secret123'  # Required for flashing messages
 
 # Generate a brand profile from user input
 def generate_brand_profile(info):
@@ -71,5 +71,5 @@ def index():
     return render_template('form.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
     # app.run(host='127.0.0.1', port=5000, debug=True)

@@ -16,6 +16,17 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6NVTVR9G0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-E6NVTVR9G0');
+    </script>
+
     <!-- Basic Styles -->
     <style>
         body {
@@ -113,6 +124,7 @@
             }
         }
     </style>
+
 </head>
 
 <body>
@@ -145,7 +157,8 @@
             <label for="keywords">Keywords (comma separated):</label>
             <input type="text" id="keywords" name="keywords" required>
 
-            <button type="submit">Generate Brand</button>
+            <button onclick="gtag('event', 'submit_brand_form')" type="submit">Generate Brand</button>
+
         </form>
     </main>
 
